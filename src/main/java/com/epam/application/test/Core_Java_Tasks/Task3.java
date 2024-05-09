@@ -1,4 +1,4 @@
-package com.epam.application.test;
+package com.epam.application.test.Core_Java_Tasks;
 
 class Address {
     int floorNumber;

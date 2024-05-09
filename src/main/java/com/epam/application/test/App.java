@@ -1,4 +1,6 @@
 package com.epam.application.test;
+import com.epam.application.test.Core_Java_Tasks.Task5;
+import com.epam.application.test.Core_Java_Tasks.Task6;
 /**
  * Hello world!
  *
