@@ -1,5 +1,5 @@
 package com.epam.application.test;
-//import com.epam.application.test.Core_Java_Tasks.*;
+import com.epam.application.test.Core_Java_Tasks.*;
 import com.epam.application.test.Classes_And_Objects.*;
 
 /**
@@ -9,12 +9,12 @@ import com.epam.application.test.Classes_And_Objects.*;
 public class App 
 {
     public static void main( String[] args ) {
-//        Task5 t1 = new Task5("Sunday", 3);
-//        Task5 t2 = new Task5("Tuesday", 101);
-//        t1.startDayOfProject();
-//        t2.startDayOfProject();
-//        Task6 t3 = new Task6("Epam Systems Pvt Ltd");
-//        t3.findDuplicateChars();
+        Task5 t1 = new Task5("Sunday", 3);
+        Task5 t2 = new Task5("Tuesday", 101);
+        t1.startDayOfProject();
+        t2.startDayOfProject();
+        Task6 t3 = new Task6("Epam Systems Pvt Ltd");
+        t3.findDuplicateChars();
         Book b1 = new Book(1, "Anna Karenina", "Leo Tolstoy");
         Book b2;
         b2 = new Book();
@@ -33,5 +33,14 @@ public class App
         for( Book b : Books) {
             System.out.println( b.getBookId() + " " + b.getBookName() + " " + b.getAuthorName() );
         }
+        Employee E1 = new Employee( "Robert", 1994, "64C- WallsStreat" );
+        Employee E2 = new Employee( "Sam", 2000, "68D- WallsStreat" );
+        Employee E3 = new Employee( "John", 1999, "26B- WallsStreat" );
+        Employee[] E = new Employee[3];
+        E[0] = E1;
+        E[1] = E2;
+        E[2] = E3;
+        Employee emp = new Employee();
+        emp.printInfo( E );
     }
 }
