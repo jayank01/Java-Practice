@@ -1,6 +1,10 @@
 package com.epam.application.test;
+import com.epam.application.test.Classes_And_Objects.Task5;
 import com.epam.application.test.Core_Java_Tasks.*;
 import com.epam.application.test.Classes_And_Objects.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Hello world!
@@ -42,5 +46,13 @@ public class App
         E[2] = E3;
         Employee emp = new Employee();
         emp.printInfo( E );
+        Movie m1 = new Movie("Dunki", "Raj Kumar Hirani", 2024, "Comedy, Drama", 6.6);
+        m1.AddReview(7.3);
+        m1.getMovieDetails();
+        UserNameValidator unv = new UserNameValidator();
+        boolean f = unv.Validate("123456");
+        if( f ) System.out.println("Username is valid");
+        Task5_ObjNClasses obj = new Task5_ObjNClasses();
+        obj.fun("I have a lot of tasks that complete today, so I need that stay focused.", "that", "to");
     }
 }
