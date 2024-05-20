@@ -1,10 +1,6 @@
 package com.epam.application.test;
-import com.epam.application.test.Classes_And_Objects.Task5;
 import com.epam.application.test.Core_Java_Tasks.*;
 import com.epam.application.test.Classes_And_Objects.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Hello world!
