@@ -1,4 +1,4 @@
-package com.epam.application.test.Generics;
+package com.epam.application.test.Generics_Tasks;
 
 import java.util.*;
 

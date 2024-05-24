@@ -1,6 +1,6 @@
 package com.epam.application.test.Stream_API_Tasks;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private int id;
     private String name;
     private int age;
@@ -58,5 +58,9 @@ public class Employee {
                 ", yearOfJoining=" + yearOfJoining +
                 ", salary=" + salary +
                 '}';
+    }
+    @Override
+    public int compareTo(Employee e) {
+        return e.getName().compareTo(this.getName());
     }
 }

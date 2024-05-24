@@ -1,5 +1,5 @@
-package com.epam.application.test.Classes_And_Objects;
-import java.util.regex.*;
+package com.epam.application.test.Classes_And_Objects_Tasks;
+
 public class UserNameValidator {
     public Boolean Validate(String username) {
         for( char ch : username.toCharArray() ) {

@@ -1,4 +1,4 @@
-package com.epam.application.test.Classes_And_Objects;
+package com.epam.application.test.Classes_And_Objects_Tasks;
 
 public class Employee{
     String name;

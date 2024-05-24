@@ -1,6 +1,6 @@
 package com.epam.application.test;
 import com.epam.application.test.Core_Java_Tasks.*;
-import com.epam.application.test.Classes_And_Objects.*;
+import com.epam.application.test.Classes_And_Objects_Tasks.*;
 
 /**
  * Hello world!
