@@ -1,5 +1,5 @@
 package com.epam.application.test.SOLID_Tasks.Task4;
 
-public interface CashbackUPIPayments extends UPIPayments{
+public interface CashbackUPIPayments{
     void getCashBackAsCreditBalance();
 }

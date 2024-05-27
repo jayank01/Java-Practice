@@ -1,6 +1,6 @@
 package com.epam.application.test.SOLID_Tasks.Task4;
 
-public class GooglePay implements CashbackUPIPayments{
+public class GooglePay implements UPIPayments,CashbackUPIPayments{
     @Override
     public void getScratchCard() {
         System.out.println("Money send to user");
