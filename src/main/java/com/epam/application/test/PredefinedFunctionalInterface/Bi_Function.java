@@ -22,6 +22,6 @@ public class Bi_Function {
         for( Product p : cart.keySet() ) {
             cost += costOfCart.apply(p,cart.get(p));
         }
-        System.out.println("Cost of cart is " + cost );
+        System.out.println("Cost of cart is " + cost);
     }
 }

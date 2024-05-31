@@ -62,8 +62,15 @@ public class Main {
         System.out.println("Employees younger than or equal 25 " + youngerThan25 );
         List<Employee> olderThan25 = employeeDetails.stream().filter((e)->e.getAge()>25).collect(Collectors.toList());
         System.out.println("Employees older than 25 " + olderThan25);
+        // Alternate way
+        Map<Boolean,List<String>> ls = employeeDetails.stream().collect(Collectors.partitioningBy(e->e.getAge()<25, Collectors.mapping(e->e.getName(),Collectors.toList())));
+        System.out.println( ls );
+
         // 15.
         Optional<Employee> oldestEmp = employeeDetails.stream().sorted((e1,e2)->e2.getAge()-e1.getAge()).findFirst();
         System.out.println("Age of oldest emp is " + oldestEmp.get().getAge() + " and his department is " + oldestEmp.get().getDepartment());
+
+        Map<Integer,String> idNameMap = employeeDetails.stream().collect(Collectors.toMap((e)->e.getId(),(e)->e.getName()));
+        System.out.println( idNameMap );
     }
 }
