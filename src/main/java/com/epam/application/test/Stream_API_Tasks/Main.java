@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Total no. of Male employees are " + maleCount);
         Long femaleCount = employeeDetails.stream().filter((e) -> e.getGender().equals("Female")).count();
         System.out.println("Total no. of Female employees are " + femaleCount );
-        Map<String, Long> maleFemaleEmp = employeeDetails.stream().collect(Collectors.groupingBy((e)->e.getGender(),Collectors.counting()));
+        Map<String, Long> maleFemaleEmp = employeeDetails.stream().collect(Collectors.groupingBy(e->e.getGender(),Collectors.counting()));
         System.out.println(maleFemaleEmp);
         // 2.
         List<String> departments = employeeDetails.stream().map((e) -> e.getDepartment()).distinct().collect(Collectors.toList());
